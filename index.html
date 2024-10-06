@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Why Is Mars's Moon Traveling the Wrong Way - Azeem</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -12,14 +12,143 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.container{
+			  display: flex;
+			}
+			.col {
+			  flex: 1;
+			}
+		</style>				
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h2>Why is Mars's Moon Traveling the wrong way</h2>
+					<h2>Why is Mars's Moon Traveling the Wrong Way</h2>
+					<p>Azeem Bande-Ali</p>
+					<p>Oct 12, 2024</p>
 				</section>
-				<section>Slide 2</section>
+				<section data-auto-animate>
+					<video data-autoplay loop="true" class="r-stretch" src="assets/mars-phobos-deimos.webm"></video>
+					<p>View from the Curiosity rover on Mars.</p>
+				</section>
+				<section data-auto-animate>
+				<div class="container">
+					<div class="col">
+					<video data-autoplay loop="true" src="assets/mars-phobos-deimos.webm"></video>
+					</div>
+					<div class="col">
+						<ul>
+							<li>Phobos, the closer moon, is rising from the west</li>
+							<li>Deimos, the farther moon, is crossing in the other direction</li>
+						</ul>
+					</div>
+				</div>
+				</section>
+				<section>
+					<h2>Orbital Direction</h2>
+					<video data-autoplay loop="true" src="assets/earth-moon-prograde.mp4"></video>
+					<p>Almost everything in the Solar System orbits in the same direction!</p>
+				</section>
+				<section>
+					<h2>Why?</h2>
+					<div class="r-stretch">
+						<img class="" src="assets/solar-system-formation-a.jpg"/>
+						<img class="" src="assets/solar-system-formation-b.jpg"/>
+						<img class="" src="assets/solar-system-formation-c.jpg"/>
+					</div>
+				</section>
+				<section>
+					<h2>Known Retrograde Weirdos</h2>
+					<div>
+						<ul>
+							<li>Uranus: But Not Really!</li>
+							<li class="fragment">Venus: But Not Really!</li>
+							<li class="fragment">Triton: Okay yea, weird.</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<video data-autoplay loop="true" src="assets/mars-phobos-deimos-same.mp4"></video>
+					<p>ESA's orbiter <em>Mars Express</em> shows the two moons orbiting in the same direction!</p>
+				</section>
+				<section data-auto-animate>
+					<h2>Apparent Motion</h2>
+					<video class="col" data-autoplay loop="true" src="assets/car-driving-side-view-static-slow.mp4"></video>
+				</section>
+				<section data-auto-animate>
+					<h2>Apparent Motion</h2>
+					<video data-autoplay loop="true" src="assets/car-driving-side-view-moving-slow.mp4"></video>
+				</section>
+				<section data-auto-animate>
+					<h2>Apparent Motion</h2>
+					<div class="container">
+					<div class="col">
+						<video data-autoplay loop="true" src="assets/car-driving-side-view-moving-slow.mp4"></video>
+					</div>
+					<div class="col">
+						<ul>
+							<li>Blue car: Rotation of Mars</li>
+							<li>Red Car: Phobos</li>
+							<li>Green Car: Deimos</li>
+						</ul>
+					</div>
+					</div>
+				</section>
+				<section>
+					<h2>Deimos is like our moon</h2>
+					<video data-autoplay loop="true" src="assets/deimos.mp4"></video>
+				</section>
+				<section data-auto-animate>
+					<h2>Phobos rises itself</h2>
+					<video data-autoplay loop="true" src="assets/phobos.mp4"></video>
+				</section>
+				<section data-auto-animate>
+					<h2>Phobos rises itself</h2>
+					<img class="r-stretch" src="assets/iss-orbit-nyc.PNG"/>
+					<p>Like the International Space Station!</p>
+				</section>
+				<section>
+					<ul>
+						<li>Deimos rises in the east because of Mars's rotation</li>
+						<li>Phobos rises in the west because of its own orbit</li>
+						<li>So Martian moons have all the possibilities covered?</li>
+					</ul>
+
+					<p class="fragment">Well, there is a third possibility!</p>
+				</section>
+				<section data-auto-animate>
+					<h2>Rise and Set in the East</h2>
+					<video class="r-stretch" data-autoplay loop="true" src="assets/manual-moon.mp4"></video>
+				</section>
+				<section>
+					<h2>Rise and Set in the East</h2>
+					<video class="r-stretch" data-autoplay loop="true" src="assets/manual-moon.mp4"></video>
+					<p>Alas, no such configuration in the Solar System.</p>
+				</section>
+				<section data-auto-animate>
+					<h2>Except...Mercury</h2>
+					<video class="r-stretch" data-autoplay loop="true" src="assets/mercury-fake-orbit.mp4"></video>
+				</section>
+
+
+
+				<section data-auto-animate>
+					<h2>Except...Mercury</h2>
+					<div>
+						<ul>
+							<li>We have Mars beat</li>
+							<li>But Mars wasn't the real competition!</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<h2>Questions?</h2>
+					<video style="height: 200px;" data-autoplay loop="true" src="assets/deimos.mp4"></video>
+					<video style="height: 200px" data-autoplay loop="true" src="assets/phobos.mp4"></video>
+					<video style="height: 200px" data-autoplay loop="true" src="assets/manual-moon.mp4"></video>
+				</section>
 			</div>
 		</div>
 
@@ -33,10 +162,41 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				controls: false,
+				mouseWheel: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+
+			// Code to support mouse navigation
+			window.addEventListener("mousedown", handleClick, false);
+			// window.addEventListener("contextmenu", function(e) { e.preventDefault(); }, false);
+
+			function handleClick(e) {
+				e.preventDefault();
+				if(e.button === 0) Reveal.next(); 
+				if(e.button === 1) Reveal.prev(); 
+			}
+
+			/* TODO: Remove
+			 *
+			 * temporary hot reload
+			 */
+			let idleTime = 0;
+			function resetIdleTime() {
+				idleTime = 0;
+			}
+			function checkIdleTime() {
+				idleTime += 1;
+				if (idleTime >= 10) { // 10 seconds
+					location.reload();
+				}
+			}
+			document.onmousemove = resetIdleTime;
+			document.onkeydown = resetIdleTime;
+			document.onmouseover = resetIdleTime; // Detect hover activity
+			// setInterval(checkIdleTime, 1000); // Check every second
 		</script>
 	</body>
 </html>
